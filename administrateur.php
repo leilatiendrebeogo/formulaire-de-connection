@@ -34,8 +34,9 @@
              <input type="text"   name=" email" class="form-control" ><br>  <br> <br>
 
              <div class="form-group">
-             <label for="email">password</label>
-             <input type="text"   name=" password" class="form-control" > <br> <br>
+             <label for="passsword">password</label>
+             <input type="password" id="pwd"  name=" password" class="form-control" ><br>
+             <button type="button" id="eye" style="width:50px;height:25px;">Voir</button> <br> <br>
              <input type="submit" class="w-50%"  value="se connecter" >
              
              </div>
@@ -48,4 +49,13 @@
      </div>
 
 </body>
+<script>
+document.getElementById("eye").addEventListener("click", function(e){
+        var pwd = document.getElementById("pwd");
+        if(pwd.getAttribute("type")=="password"){
+            pwd.setAttribute("type","text");
+        } else {
+            pwd.setAttribute("type","password");
+        }
+    });</script>
 </html>

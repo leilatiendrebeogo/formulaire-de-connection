@@ -10,7 +10,6 @@ catch (Exception $e){
 
 }
 if(  Extension_loaded('PDO'))   {
-    echo"qsdfcv";
 
 }
 
